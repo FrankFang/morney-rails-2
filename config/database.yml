@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: fang
+  password: 123456
+  host: 192.168.99.102
+  port: 5001
+
+development:
+  <<: *default
+  database: morney_rails_1_development
+test:
+  <<: *default
+  database: morney_rails_1_test
+production:
+  <<: *default
+  database: morney_rails_1_production
+  username: morney_rails_1
+  password: <%= ENV['MORNEY_RAILS_1_DATABASE_PASSWORD'] %>
