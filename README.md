@@ -1,5 +1,13 @@
 # 使用方法
 
+## 下载代码
+
+```bash
+git clone git@github.com:FrankFang/morney-rails-1.git
+cd morney-rails-1
+bundle install
+```
+
 ## 开启数据库
 
 ```bash 
@@ -20,7 +28,7 @@ docker run -v morney-rails-1-data:/var/lib/postgresql/data -p 5001:5432 -e POSTG
 ## 创建数据库
 
 ```bash
-bin/rails db:create db:migrate db:seed
+bin/rails db:create
 ```
 
 ## 运行 server
