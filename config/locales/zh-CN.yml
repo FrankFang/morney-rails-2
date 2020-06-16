@@ -8,6 +8,7 @@ zh-CN:
               blank: 密码不能为空
               too_short: 密码不能少于 6 个字符
             email:
+              taken: 邮箱已经被注册了
               blank: 邮箱不能为空
               invalid: 邮箱必须还有 @ 字符
             password_confirmation:
