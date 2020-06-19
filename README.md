@@ -6,6 +6,7 @@
 git clone git@github.com:FrankFang/morney-rails-1.git
 cd morney-rails-1
 bundle install
+bundle exec rake app:update:bin
 ```
 
 ## 开启数据库
