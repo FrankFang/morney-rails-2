@@ -11,6 +11,16 @@ bundle exec rake app:update:bin
 
 ## 开启数据库
 
+如果你曾经开启过数据库，请运行
+
+```bash
+docker ps -a 
+然后找到上次的容器
+docker restart 容器id
+```
+
+如果你第一次开启数据库，请运行
+
 ```bash 
 docker run -v morney-rails-1-data:/var/lib/postgresql/data -p 5001:5432 -e POSTGRES_USER=fang -e POSTGRES_PASSWORD=123456  -d postgres:12.2
 ```
