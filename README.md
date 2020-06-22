@@ -42,6 +42,12 @@ docker run -v morney-rails-1-data:/var/lib/postgresql/data -p 5001:5432 -e POSTG
 bin/rails db:create
 ```
 
+## 创建数据表
+
+```bash
+bin/rails db:migrate
+```
+
 ## 运行 server
 
 ```bash
